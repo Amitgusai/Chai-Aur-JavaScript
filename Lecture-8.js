@@ -20,7 +20,7 @@
 console.log(null > 0);
 console.log(null == 0);
 console.log(null >= 0);     // change
-// The reason for different output is than an equality check ++ and comparison > < >= <= work differently
+// The reason for different output is than an equality check == and comparison > < >= <= work differently
 // Comparison convert null to a number, treating it as 0.
 
 // '===' - It strictly check whether the comparison is between same data types or not.

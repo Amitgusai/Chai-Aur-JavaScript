@@ -52,5 +52,5 @@ const myFunction = function(){
 
 console.log(typeof myFunction);
 
-// To Master JacaScript :- master objects and  master browser Events. 
+// To Master JacaScript :- master objects and  master browser Events. [DOM]
 
