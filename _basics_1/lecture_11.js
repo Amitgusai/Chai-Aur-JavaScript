@@ -46,7 +46,7 @@ console.log(demo.substring(8, 15));
 console.log(demo.slice(6, -4));
 // Can also take -ve numbers unlike substring
 console.log(demo.length);
-console.log(demo.concat(demo, tutorial));
+console.log(demo.concat(tutorial));
 console.log(demo[10]);
 
 /* 
