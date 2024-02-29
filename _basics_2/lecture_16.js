@@ -9,7 +9,7 @@ Object.create;
 const my_object = {
   name: "amit",
   age: 20,
-  "weekday": "sunday",
+  weekday: "sunday",
   // Above can only be accessed though [" "] method
   email: "amit@google.com",
   isloggedin: false,
@@ -52,10 +52,11 @@ console.log(my_object.greeting());
 
 // String Interpolation:
 
-my_object.greeting_2 = function (){
+my_object.greeting_2 = function () {
   console.log(`This is my name ${this.name}`);
   // To refer to the properties of an Object: 'this' is used
   // It provides a way to access the properties and methods of the object within the method.
 };
 
 console.log(my_object.greeting_2());
+// https://docs.google.com/document/d/1f7iAj6hTgg6jMYEfzjt4kxt3n2eFJvcwGOVeusMCe5I/edit?usp=sharing
