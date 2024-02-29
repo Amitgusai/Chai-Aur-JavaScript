@@ -38,3 +38,17 @@ console.log(Array.from(ans));
 // Converting any type to array
 console.log(Array.of("amit", 2, 3, 4));
 // Creates a new array from a set of elements
+
+("Array Destructuring");
+
+let dectruct = ["amit", "gusai", "ram"]
+let [name, surname, god] = dectruct
+// This created a variable or data type in itself which has seperate reference from the array
+name = "rahul"
+// console.log(dectruct[0])
+// console.log(dectruct[1])
+console.log(name)
+console.log(surname)
+console.log(typeof name)
+// console.log(god)
+
