@@ -31,24 +31,26 @@ console.log(real_array);
 
 console.log(Array.isArray("amit"));
 // checking is it a array
+
 console.log(Array.from("amit"));
 // Converting any type to array
+
 let ans = "hitesh choudhary";
 console.log(Array.from(ans));
 // Converting any type to array
+
 console.log(Array.of("amit", 2, 3, 4));
 // Creates a new array from a set of elements
 
 ("Array Destructuring");
 
-let dectruct = ["amit", "gusai", "ram"]
-let [name, surname, god] = dectruct
+let dectruct = ["amit", 10, "ram"];
+let [name, surname, god] = dectruct;
 // This created a variable or data type in itself which has seperate reference from the array
-name = "rahul"
+name = "rahul";
 // console.log(dectruct[0])
 // console.log(dectruct[1])
-console.log(name)
-console.log(surname)
-console.log(typeof name)
-// console.log(god)
-
+console.log(name);
+console.log(surname);
+console.log(typeof name);
+console.log(typeof surname);
