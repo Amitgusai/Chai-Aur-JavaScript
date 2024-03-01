@@ -65,6 +65,8 @@ const tech_object = {
   age: 35,
 };
 
+// We can apply Loops by: 
+
 console.log(Object.keys(tech_object));
 // key arrays data type
 console.log(Object.values(tech_object));
