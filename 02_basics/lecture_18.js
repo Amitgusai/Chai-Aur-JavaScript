@@ -22,14 +22,14 @@ console.log(Instructor);
 // JSON
 // API values from BackEnd in JSON format
 
-// 1. Object form
-{
-  "name": "amit",
-  "course_name": "javascript",
-  "price": "im-measurable"
-}
+"1. Object form"
+// {
+//   "name": "amit",
+//   "course_name": "javascript",
+//   "price": "im-measurable"
+// }
 
-// 2. Array form
+"2. Array form"
 [
   {},
   {},
@@ -40,16 +40,17 @@ console.log(Instructor);
 
 // A JSON formatter is a tool that makes JSON data easier to read and understand.
 
-// Raw data: 
-{"name":"John","age":30,"cars":["Ford","BMW","Fiat"]}
+"Raw data: "
+// {"name":"John","age":30,"cars":["Ford","BMW","Fiat"]}
 
-// Formatted JSON data:
-{
-  "name": "John",
-  "age": 30,
-  "cars": [
-      "Ford",
-      "BMW",
-      "Fiat"
-  ]
-}
+"Formatted JSON data:"
+
+// {
+//   "name": "John",
+//   "age": 30,
+//   "cars": [
+//       "Ford",
+//       "BMW",
+//       "Fiat"
+//   ]
+// }
