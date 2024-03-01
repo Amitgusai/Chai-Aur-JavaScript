@@ -41,6 +41,8 @@ my_object.email = "hitesh@gpt.com";
 my_object.email = "microsoft.com";
 console.log(my_object);
 
+("Function_in_a_Object");
+
 my_object.greeting = function () {
   console.log("Ram");
 };
