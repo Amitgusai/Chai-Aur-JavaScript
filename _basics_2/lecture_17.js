@@ -4,14 +4,6 @@
 const singleton = new Object();
 // Singleton
 
-const tinder_user = {
-  user_name: "AmitGusai",
-  user_id: 128572,
-};
-
-const { user_id } = tinder_user;
-// console.log(user_id);
-
 const obj1 = {
   1: "amit",
   2: "gusai",
