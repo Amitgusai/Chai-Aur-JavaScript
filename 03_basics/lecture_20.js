@@ -27,7 +27,7 @@ function object(obj1){
     console.log(`Username is ${obj1.username} and his/her age is ${obj1.age}`)
 };
 
-// object(user);
+object(user);
 object({
     username: "hitesh", 
     age: 45
