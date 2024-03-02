@@ -2,15 +2,6 @@
 
 ("Important for InterView: ");
 
-// HOW Code Execution works:
-
-// Before running phases: Very Important
-// Whenever we give javascript a code program, then always a Global Execution Context will be created which is referred to 'this' ; 
-// GEC, will it contain the value of this is another matter;
-// IN browser, value of 'this' is Window Object;
-
-// JavaScript is single threaded, everything is a Process 
-
 ("Execution Context:");
 // 1. Global Execution Context (GEC): 
 // Created once at the beginning of code execution. 
