@@ -82,8 +82,8 @@ let result2 = addNum(10, 2);
 // Each function call creates a separate function execution context that is independent of other contexts. 
 // This ensures proper scoping and isolation of function behavior
 
-// The this keyword within a function context typically refers to the object that invoked the function. 
-// However, its behavior can be influenced by various factors, including strict mode, call, apply, and bind methods.
+// The this keyword within a function context typically refers to the object that invoked the function (in case of method) 
+// However, This behavior can be changed by using methods like call(), apply(), or bind() which allow you to set the value of "this" explicitly.
 
 
 (".........................................................         Call Stack - LIFO      .....................................................");
