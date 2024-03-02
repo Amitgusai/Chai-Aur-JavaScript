@@ -71,11 +71,27 @@ let result2 = addNum(10, 2);
 // Similar with result2 = addNum 
 // Write down the Execution Context for result2
 
-(".........................................................         Call Stack      .....................................................");
+(".........................................................         Call Stack - LIFO      .....................................................");
 
 
+// 1. Global Execution Context (Global Environment)
+ 
+// LIFO - Last In First Out 
 
+Example:
+function one() {
+    console.log("one");
+    two();
+};
+function two() {
+    console.log("two");
+    three();
+};
+function three() {
+    console.log("three");
+};
 
-
-
+one();
+two();
+three();
 
