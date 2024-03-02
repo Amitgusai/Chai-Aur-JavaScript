@@ -31,7 +31,10 @@ let result2 = addNum(10, 2);
 
 ("1. Global Execution Context (GEC):")
 // Created once at the beginning of the script.
-// All the code is in the GEC and the Execution phase happens inside GEC (think as Box)
+// Inside the GEC:
+    // Execution phase Occurs:
+        // 1. Memory Creation Phase
+        // 2. Execution Phase
 
 // "Initial values for variables are set to undefined by default, while functions are stored with their definitions (code)."
 
@@ -109,9 +112,10 @@ three();
 ("Execution Flow:")
 
 // Global Execution Context (GEC):
-
 // The script begins by creating the GEC.
+
 // Inside the GEC, the functions one, two, and three are defined.
+
         // 1.  one() is the first function called.
         //     Calling one():
 
@@ -127,13 +131,13 @@ three();
         // 4.  three() logs "three" to the console.
         //     Now, three() doesn't call any other functions, so it finishes its execution.
 
-// Stack LIFO Action:
-// Following the LIFO principle, the first function to be finished, three(), is removed (popped) from the stack.
+        // Stack LIFO Action:
+        // Following the LIFO principle, the first function to be finished, three(), is removed (popped) from the stack.
 
         // 5.  two() Resumes:
 
-// Now, control goes back to the previously paused function, two().
-// Since there are no more statements in two(), it finishes and is popped from the stack.
+        // Now, control goes back to the previously paused function, two().
+        // Since there are no more statements in two(), it finishes and is popped from the stack.
 
         // 6.  one() Completes:
 
