@@ -17,16 +17,4 @@ console.log(a);
 // console.log(b);
 console.log(c);
 
-("For InterView: Scope in windows through Browser and in code enviroment through node are both Differenct");
-
-
-
-
-
-
-
-
-
-
-
-
+("For InterView: Scope in windows through Browser and in code enviroment through node are both Different");
