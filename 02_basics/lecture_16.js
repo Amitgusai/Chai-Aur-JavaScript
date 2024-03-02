@@ -23,10 +23,13 @@ console.log(my_object["weekday"]);
 
 ("Interview Question: Take a symbol in Object and print it");
 
-const my_sym = Symbol("key");
+let my_sym = Symbol("key");
+// (" It is necessary to initialize a symbol before including it in an object in JavaScript. ");
+// (" This is because when you use a symbol as a property key in an object, JavaScript needs to know what that symbol represents.");
+
 const object = {
   my_sym: "string",
-  [my_sym]: "key",
+  [my_sym]: "value",
   // To declare as Symbol
 };
 
