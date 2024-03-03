@@ -153,8 +153,9 @@ if (Object.keys(emptyObj).length === 0) {
 (".........................................       Nullish Coalescing Operator (??) - Projects ");
 
 ("FallBack");
-// 1. null
-// 2. undefined
+// This '??' operator is used to check the value of the left-hand operand. 
+// If it is null or undefined, it will return the value of the right-hand operand. 
+// If the left-hand operand is any other value (including 0, false, or an empty string), it will return the left-hand operand.
 
 let val1;
 // val1 = 5 ?? 10;
@@ -168,7 +169,10 @@ val3 = null ?? 10 ?? 20;
 console.log(val1);
 console.log(val2);
 console.log(val3);
-// Sometimes, When we call from a Database (FireBase, AppWrite), we don't get the respond directly - chances are we can get two values (null or undefined)
+
+"Practical Use:"
+// When calling a database, you might not get a response immediately, and the response might be null or undefined. 
+// The nullish coalescing operator allows you to provide a default value in case the response is null or undefined.
 
 ("...........................................           Terniary Operator: ");
 
