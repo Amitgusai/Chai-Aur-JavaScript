@@ -131,14 +131,15 @@ if (userMail) {
 
 ("..............................................        Important Concept:")
 
-// To check Array:
+// Checking for empty Arrays [] length.
+
 if (userMail.length === 0) {
   console.log("Array is Empty");
 } else {
   console.log("Array contains Value");
 }
 
-// To Check Object:
+// Checking for empty Objects {} key count.
 const emptyObj = {};
 
 if (Object.keys(emptyObj).length === 0) {
