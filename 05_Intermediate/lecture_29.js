@@ -80,9 +80,19 @@ const arr1 = ["amit", 5, "rahul", "anjali", "TATA", 1, "govind"];
 // };
 // console.log("\n");
 
-("..................        Note Difference: .................");
-// for_of loop prints/ access the value of Array
-// for_in loop prints/ access the key of Array
+
+("................................................          INTERVIEW QUESTIONS         : ..................................................");
+
+// for_of loop is designed to iterate over an iterable object ( plain object are not iterable objects by default but map object is iterable object)
+// for_in loop is desinged to iterate over the enumerable properties of an object, not over iterable object
+
+// While Map objects are iterable, they are not plain objects with enumerable properties, which is what the for...in loop requires.
+
+// The for...in loop works by iterating over the keys of an object, whereas the for...of loop works by iterating over the values of an iterable object. 
+// Since Map objects are iterable and not plain objects, you can use for...of to iterate over them, but not for...in.
+
+// In other words, the for...in loop is used for objects, and the for...of loop is used for iterable objects like Arrays, Strings, Maps, NodeLists, and more.
+
 
 for (const key in arr1) {
     console.log(arr1[key]);
