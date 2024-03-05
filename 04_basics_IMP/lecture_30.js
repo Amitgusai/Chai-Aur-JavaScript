@@ -16,6 +16,7 @@
 (".......................................................................          Filter           .....................................................................");
 
 // In JavaScript, when you use the filter function, it creates a new array and does not modify the original array.
+// It's used when you want to select a subset of multiple elements from an array.
 
 const num3 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
@@ -40,6 +41,7 @@ console.log(num5);
 ("............................................................          DATABASE (INPORTANT Example)        ..........................................................");
 
 // In JavaScript, when you use the filter function, it creates a new array and does not modify the original array.
+// It's used when you want to select a subset of multiple elements from an array.
 
 const book = [
     { title: 'Book One', genre: 'Fiction', publish: 1981, edition: 2004},
@@ -65,6 +67,7 @@ console.log(userBook2);
 (".........................................................         MAPS        ...................................................");
 
 // In JavaScript, when you use the map function, it creates a new array and does not modify the original array.
+// It's used when you want to transform all elements in an array.
 
 const myNumber = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const num = myNumber.map( (item) => { return item + 10});
