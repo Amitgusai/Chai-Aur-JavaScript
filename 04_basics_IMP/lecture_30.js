@@ -6,7 +6,7 @@
 
 // const values = myArray.forEach( (item) => {
 //     console.log(item);
-    ('Return is Not possible in for...Each loop')
+    // ('Return is Not possible in for...Each loop')
 //     return item;
 // });
 
@@ -29,9 +29,9 @@ console.log(values1);
 // ............................................              for...Each  --  push()      
 const num5 = [];
 
-num.forEach( (num) => {
+num3.forEach( (num) => {
     if (num > 4 ) {
-        num5. push(num);
+        num5.push(num);
     };
 });
 
@@ -103,7 +103,7 @@ console.log(newNum)
 
 const numReduce = [1, 2, 3];
 
-Regular_Function: 
+// Regular_Function: 
 const myTotal = numReduce.reduce( function (accumulator, current_value) {
     // console.log(`accumulator: ${accumulator} and current value: ${current_value}`);          // Understanding
     return accumulator + current_value;
@@ -112,7 +112,7 @@ const myTotal = numReduce.reduce( function (accumulator, current_value) {
 console.log(myTotal);
 
 
-Arrow_Function:
+// Arrow_Function:
 const myTotal1 = numReduce.reduce( (accumulator, current_value) => (accumulator + current_value), 0)
 // Smart Work 
 console.log(myTotal1)
@@ -149,4 +149,3 @@ const shoppingCart = [
 
 const total = shoppingCart.reduce( (accumulator, item) => (accumulator + item.price), 0);
 console.log(total);
-
