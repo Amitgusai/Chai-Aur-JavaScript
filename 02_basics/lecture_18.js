@@ -9,6 +9,7 @@ const login = {
 console.log(login.username);
 // De_Structure:
 const { course_instructor: Instructor } = login;
+// Same variable as keys in object
 console.log(Instructor);
 
 // Concept used in React as: De-Structuring in React
@@ -54,3 +55,54 @@ console.log(Instructor);
 //       "Fiat"
 //   ]
 // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const ob = {
+  name: "amit",
+  age: 34,
+  mentor: "hitesh",
+  guru: "love babbar"
+}
+
+let {name: am, age, mentor, teacher} = ob;
+console.log(am)

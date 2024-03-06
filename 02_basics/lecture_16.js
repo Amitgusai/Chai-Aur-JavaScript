@@ -3,13 +3,13 @@
 // Objects can be declared using two ways:
 
 // 1. Constructor (SINGLETON created)
-Object.create;
+const singleton = new Object();
 
 // 2. Literal (no singleton created)
 const my_object = {
   name: "amit",
   age: 20,
-  weekday: "sunday",
+  'weekday': "sunday",
   // Above can only be accessed though [" "] method
   email: "amit@google.com",
   isloggedin: false,
@@ -54,6 +54,7 @@ console.log(my_object.greeting);
 // Function execute nahi hai , only the reference of function
 console.log(my_object.greeting());
 // Output : undefined
+// As nothing is returned by function to my_object.greeting
 
 // String Interpolation:
 

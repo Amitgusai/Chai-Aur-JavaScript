@@ -42,7 +42,7 @@ console.log(nest_object.fullname?.frist_name);
 // ? - works as a if exist then proceed
 console.log(nest_object.user_id.user_name.location);
 
-("............................            IMPORTANT - (BALUES FROM DATABASE comes in ARRAY form)           ..............................");
+("............................            IMPORTANT - (VALUES FROM DATABASE comes in ARRAY form)           ..............................");
 
 const array_object = [
   {
@@ -75,6 +75,6 @@ console.log(Object.entries(tech_object));
 // key:value pair Arrays
 
 console.log(tech_object.hasOwnProperty("name"));
-// Many of the times we have to loop throught a whole Object and accessing valur during which
-// many time the values does not even exist so we use:
+// Many of the times we have to loop throught a whole Object and accessing value during which
+// many time the values does not even exist so we use: hasOwnProperty()
 // Checking the property
