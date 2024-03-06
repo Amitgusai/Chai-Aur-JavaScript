@@ -16,11 +16,11 @@
 
 ("Phases");
 // JavaScript runs a program in 2 phases:
-// 1. Memory Creation/Allocation phase
+// 1. Memory Creation phase
 // 2. Execution phase
 
 ("Example Breakdown: ")
-let va1 = 10;
+let val1 = 10;
 let val2 = 5;
 function addNum(num1, num2){
     let total = num1 + num2;
@@ -29,16 +29,18 @@ function addNum(num1, num2){
 let result1 = addNum(val1, val2);
 let result2 = addNum(10, 2);
 
-("1. Global Execution Context (GEC):")
+("....................................................................................                1. Global Execution Context (GEC):")
+// The Global Execution Context (GEC) is the environment in which JavaScript code is executed
 // Created once at the beginning of the script.
-// Inside the GEC:
+
+// GEC contains:
     // Execution phase Occurs:
         // 1. Memory Creation Phase
-        // 2. Execution Phase
+        // 2. Execution Phase+
 
 // "Initial values for variables are set to undefined by default, while functions are stored with their definitions (code)."
 
-// Memory Creation Phase:
+("Memory Creation Phase:")
 // Contains:
     // val1 (undefined)
     // val2 (undefined)
@@ -46,31 +48,38 @@ let result2 = addNum(10, 2);
     // result1 (undefined)
     // result2 (undefined)
 
-("2. Execution Phase:")
+("Execution Phase:")
 
-// A. Global Execution Context:
+// A. Inside Global Execution Context:
 
 // val1 is assigned the value 10.
 // val2 is assigned the value 5.
-// No function execution happens in this phase. addNum is only defined.
+// No function execution happens in this phase. addNum is only declare.
 
 
 // B. First Function Call (result1 = addNum(val1, val2)):
-// A new Function Execution Context (FEC) is created for addNum.
-// The new Function Execution Context contains 'new variable environment' + 'Execution Thred' (think as a BOX);
+("....................................................................................              2. Function Execution Context: ");
+
+// A new Function Execution Context (FEC) is created whenever a function is invoked or called in a program. 
+("The new Function Execution Context contains 'new variable environment' + 'Execution Thread' (think as a BOX);");
+
+// New Variable Environment: This is where all the variables, parameters, and functions declared within the function are stored. In the Memory Creation/Allocation phase
+// Execution Thread: This is the process that goes through the function line by line and executes the code. It assigns values to the variables and parameters
+
 
 // FEC for addNum:
-// Memory Creation/Allocation:
+("Memory Creation Phase:")
 //     num1 (undefined)
 //     num2 (undefined)
 //     total (undefined)
-// Execution Phase:
+
+("Execution Phase:")
 //     num1 is assigned the value of val1 (which is 10).
 //     num2 is assigned the value of val2 (which is 5).
 //     total is calculated as 10 + 5 = 15.
 //     The value of total (15) is returned back to the Global Execution Context.
 
-//     Now the Execution Context is DELETED
+//     Now the Function Execution Context is DELETED
 //     The variable result1 in the Global Execution Context is assigned the value returned from the addNum function (15).
 
 
