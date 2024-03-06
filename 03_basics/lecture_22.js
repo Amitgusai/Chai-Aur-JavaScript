@@ -40,12 +40,12 @@ function addOne(num) {
 
 // Output: 7 (No Error);
 
-// For example, if you have a function that you call before it's defined in your code,
+// For example, if you have a function that you call before it's declared in your code,
 // JavaScript will still understand what you mean because it "hoists" (raise) the function declaration to the top of its scope.
 // This means it's as if you call the function at the very top of your code, even though you actually declared it later on.
 
 // However, it's important to note that only the declarations are hoisted, not the initializations.
-// This means if you try to use a variable before it's been initialized (given a value), you'll get 'undefined'.
+// This means if you try to use a variable before it's been initialized (given a value), you'll get 'undefined'. (Only in case of 'var')
 
 ("2:");
 

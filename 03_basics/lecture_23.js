@@ -1,5 +1,7 @@
 (".......................................................     This        .................................");
 
+// 'this': Only applicable in Object
+
 const user = {
     username: "amit",
     price: 299,
@@ -78,7 +80,7 @@ const addOne = (num1, num2) => {
 
 console.log(addOne(4, 5));
 
-("......................................................        Implicit return: NO need to use Return: ");
+("......................................................        Implicit return: NO need to use Return keyword: ");
 
 // Very Important in React: 
 const addTwo = (num1, num2) => (num1 + num2);
@@ -91,7 +93,7 @@ console.log(addTwo(4, 5));
 console.log(obj());
 
 // Example:
-// const y_array = [1, 2, 3, 4, 5];
+// const my_array = [1, 2, 3, 4, 5];
 // my_array.forEach(function () {})
 // my_array.forEach(() => {})
 

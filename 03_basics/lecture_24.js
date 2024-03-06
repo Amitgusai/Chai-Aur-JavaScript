@@ -2,7 +2,7 @@
 
 // WHY?
 
-// Database Connection: The comment is suggesting that when you create a file that only contains a database connection, 
+// Database Connection: When you create a file that only contains a database connection, 
 // you might want the connection to start as soon as the application starts. 
 // This is a common practice in web development where a database connection is established at the start of the application 
 // and kept open for the duration of the application's lifecycle.
