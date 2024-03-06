@@ -102,21 +102,21 @@ let result2 = addNum(10, 2);
 // It operates on the principle of Last-In, First-Out (LIFO), meaning the most recently called function is the first to be executed and finished.
 
 Example:
-function one() {
-    console.log("one");
-    two();
-};
-function two() {
-    console.log("two");
-    three();
-};
-function three() {
-    console.log("three");
-};
+                function one() {
+                    console.log("one");
+                    two();
+                };
+                function two() {
+                    console.log("two");
+                    three();
+                };
+                function three() {
+                    console.log("three");
+                };
 
-one();
-two();
-three();
+                one();
+// two();
+// three();
 
 ("Execution Flow:")
 
