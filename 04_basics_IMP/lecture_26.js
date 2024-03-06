@@ -102,7 +102,7 @@ switch (month) {
     console.log("This is Default");
     break;
 }
-// break is important as if not then it will execute the whole code after it even if condition satisfied;
+// break is important as if not then it will execute the whole code after that even if condition is already satisfied;
 // Exception - default
 
 ("............................................          InterView Question:");
@@ -154,7 +154,7 @@ if (Object.keys(emptyObj).length === 0) {
 
 ("FallBack");
 // This '??' operator is used to check the value of the left-hand operand. 
-// If it is null or undefined, it will return the value of the right-hand operand. 
+// If it is null or undefined, it will return the value of the right-hand operand (Default). 
 // If the left-hand operand is any other value (including 0, false, or an empty string), it will return the left-hand operand.
 
 let val1;
@@ -170,14 +170,41 @@ console.log(val1);
 console.log(val2);
 console.log(val3);
 
-"Practical Use:"
+
+("................................................................           Practical Example (DATABASE):         ...............................................");
+
+
 // When calling a database, you might not get a response immediately, and the response might be null or undefined. 
 // The nullish coalescing operator allows you to provide a default value in case the response is null or undefined.
 
-("...........................................           Terniary Operator: ");
+// Assume we have a function getUserEmail that fetches a user's email from the database
+
+            async function getUserEmail(userId) {
+              // This function would typically interact with the database and return the email
+              // For this example, let's assume it returns null
+              return null;
+            }
+
+            let defaultEmail = "no-email@example.com";
+
+            let userEmail2 = await getUserEmail("someUserId") ?? defaultEmail;
+
+            console.log(userEmail2); // Outputs: "no-email@example.com"
+            
+
+// In this example, 
+// getUserEmail("someUserId") is null because the user didn't provide an email. 
+// So, the nullish coalescing operator checks the result of getUserEmail("someUserId") and since it's null, it returns the value of defaultEmail. 
+// Therefore, userEmail will be "no-email@example.com".
+
+// If the user had provided an email, getUserEmail("someUserId") would not be null or undefined, and the nullish coalescing operator would return the user's email instead of the default email.
+
+
+("...........................................           Terniary Operator: '?' ");
 
 // Uses the condition, a question mark, a value if true, a colon, and a value if false
 
 const iceTea = 100;
 // condition ? true : false
 iceTea < 80 ? console.log("less than 80") : console.log("more than 80");
+// Similar to if...else 
