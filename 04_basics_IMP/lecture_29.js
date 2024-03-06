@@ -24,7 +24,7 @@
 ("for_of loop in MAPS");
 
 // Maps is an Object (key-value pair) unlike array it allows any data types as keys
-// If you need an object-like structure with any data type as keys and maintain insertion order unlike regular Object which might not reflect thre order you added them, use the Map object.
+// If you need an object-like structure with any data type as keys and maintain insertion order unlike regular Object which might not reflect the order you added them, use the Map object.
 
 const map = new Map();
 map.set("IN", "India");
@@ -119,7 +119,7 @@ arr2.forEach( function (item) {
     console.log(item);
 });
 // As it is a CallBack function i.e 'no name'
-// Automatically this funnction will execute and every-time 'item' will be giben as taking it as a parameter.
+// Automatically this funnction will execute and every-time 'item' will be given as taking it as a parameter.
 console.log("\n");
 
 
