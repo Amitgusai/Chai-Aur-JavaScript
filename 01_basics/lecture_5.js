@@ -13,7 +13,6 @@
 let name = "amit"; // String
 let age = 34; // Number
 let logged_in = false; // Boolean
-let decimal = 2.3; // Float
 let Box = null; // null => Empty ( a value , not a 0 )
 let password; // Undefined => It a 'type' in itself
 // No value is assigned

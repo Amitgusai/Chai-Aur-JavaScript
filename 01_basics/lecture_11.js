@@ -50,9 +50,14 @@ console.log(demo.concat(tutorial));
 console.log(demo[10]);
 
 /* 
-`console.log(demo.__proto__)` is accessing the prototype of the `demo` string object. 
-In JavaScript, every object has a prototype, which is an object from which it inherits methods and properties. 
-By accessing the `__proto__` property, you can see the prototype object of the `demo` string object. 
+
+__proto__ is a property in javascript, which points to a prototype object 
+From this prototype object, all the original object(string, number, array etc.) inherits the methods and properties.
+
+Meaning: The prototype object contains all the default methods and properties that are available to that particular object. 
+In this case, since demo is a string object, its prototype would contain methods like charAt(), concat(), indexOf(), etc. 
+
 */
 
 console.log(demo.__proto__); // Obtained an Object
+

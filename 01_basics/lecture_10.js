@@ -23,6 +23,6 @@ console.log(user_2);
 
 // Changes: To Access in Object (we use '.' Notation)
 user_2.email = "raghav123@gamil.com";
-user_2.upi_id = "raghav#3upi";
+user_2['upi_id'] = "raghav#3upi";
 
 console.log(user_1);
