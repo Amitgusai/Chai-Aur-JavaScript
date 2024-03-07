@@ -16,9 +16,7 @@
 // To access DOM objects in JavaScript, you can use the following methods:
 
 // 1. document.getElementById('id'): Gets the element with the specified ID.
-
 // 2. document.getElementsByTagName('tag-name'): Gets all the elements with the specified tag name.
-
 // 3. document.getElementsByClassName('class-name'): Gets all the elements with the specified class name.
 
 
@@ -31,4 +29,5 @@
 
 
 ("Note:")
-// In a browser environment, the window object represents the global environment and provides access to the DOM. You can use window.document to access the document object.
+// In a browser environment, the window object represents the global environment and provides access to the DOM. 
+// You can use window.document to access the document object.
