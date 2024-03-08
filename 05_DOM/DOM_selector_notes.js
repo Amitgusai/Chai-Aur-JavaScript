@@ -104,6 +104,7 @@
 
 // Differences from Arrays:
 //     * multi.style.color = 'green': Cannot set properties directly on a nodelist.
+//      SAME in HTML collection : Cannot set properties directly on a nodelist.
 //     * multi[0].style.color = 'green': Can set properties on individual elements by accessing their index.
 
 ("Example: HTML Collection")
@@ -146,3 +147,8 @@ const array = Array.from(nodeList);
 (".........................................................         Practice        ......................................................");
 // 1. Wikipedia 
 // 2. CodeHelp
+
+
+("Important Basic Mistakes Solutioin:")
+// Specify the type of CSS selector you are taking in querySelector() and querySelectorAll() such as for class - '.' and for id - '#'
+// NodeList and HTML collection are accessed through indexing
