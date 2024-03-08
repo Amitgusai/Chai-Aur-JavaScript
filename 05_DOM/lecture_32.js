@@ -128,10 +128,10 @@
 // * `querySelector()`: Selects a single element and returns an element.
 
 
-("Converting a NodeList to an Array")
+("Converting a NodeList/HTML collection to an Array")
 
 // If you need to convert a NodeList to an array, you can use the Array.from() method. 
-// The Array.from() method takes a NodeList as an argument and returns an array that contains the same elements as the NodeList.
+// The Array.from() method takes a NodeList/HTML collection as an argument and returns an array that contains the same elements as the NodeList.
 
 // Example:
 const nodeList = document.querySelectorAll("li");
@@ -143,10 +143,9 @@ const array = Array.from(nodeList);
 // However, you can convert a NodeList to an array using the Array.from() method.
 
 
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
+(".........................................................         Practice        ......................................................");
+// 1. Wikipedia 
+// 2. CodeHelp
 
 
 
