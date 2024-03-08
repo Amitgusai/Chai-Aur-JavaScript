@@ -2,7 +2,8 @@
 
 ("DOM (Document Object Model)")
 // The Document Object Model (DOM) is a representation of an HTML document as a tree of objects. 
-// It is a hierarchical representation of the structure of a web page to manipulate HTML document.
+// It is a hierarchical representation of the structure of a web page 
+// Its use is to target and manipulate HTML elements according to our needs.v
 
 
 ("DOM Objects")
