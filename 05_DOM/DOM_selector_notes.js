@@ -122,6 +122,14 @@
 // | Array Methods              |     map(), filter()           | Only some array methods apply (e.g., `forEach()`) |
 // | Conversion to Array        |     Not necessary             | Using `Array.from()`.                             |
 
+("Example: ")
+
+const elements = document.querySelectorAll('p');
+
+elements.forEach((element) => {
+  console.log(element.textContent);
+});
+
 
 ("querySelectorAll() vs. querySelector()")
 
