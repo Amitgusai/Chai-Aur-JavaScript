@@ -50,11 +50,11 @@
 0
 ("DOM Element Properties")
 
-// | Property       -     Description                                            |
+// | Property       -     Description                                                                                   |
 
-// | `textContent`  -     The text content of the element, excluding text from child of selected element. |
-// | `innerText`    -     The text content of the element, including text from child of selected elemnt. |
-// | `innerHTML`    -     The RAW HTML content of the element, including tags and attributes. [As it is written] |
+// | `textContent`  -     The text content of the element, excluding text from child of selected element.               |
+// | `innerText`    -     The text content of the element, including text from child of selected elemnt.                |
+// | `innerHTML`    -     The RAW HTML content of the element, including tags and attributes. [As it is written]        |
 
 
 
@@ -105,11 +105,12 @@
 // Differences from Arrays:
 //     * multi.style.color = 'green': Cannot set properties directly on a nodelist.
 //      SAME in HTML collection : Cannot set properties directly on a nodelist.
+
 //     * multi[0].style.color = 'green': Can set properties on individual elements by accessing their index.
 
 ("Example: HTML Collection")
 
-// * Similar to nodelists but created using `document.getElementsByTagName()`.
+// * Similar to nodelists but created using `document.getElementsByTagName()` or by class(if same class's value is assigned).
 // * Also not pure arrays.
 
 ("Array vs. Nodelist/HTML Collection")
