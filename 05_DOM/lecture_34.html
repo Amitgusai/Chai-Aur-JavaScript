@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit and Remove Element in DOM</title>
+
+    <style>
+      body {
+        background-color: #212121;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+  </body>
+
+  <script>
+    // const parent = document.querySelector('.language');
+    // const list = document.createElement('li');
+    // parent.appendChild(list);
+    // console.log(parent);
+    // list.innerHTML = "Repeated";
+
+    ("Basic: ");    // Problem: Optimisation Issue -- Each time the Whole tree is being traversed.
+
+    // As we may have to add and create many tags so :
+    function addLanguage(textName) {
+        const list = document.createElement('li');
+        list.innerHTML = textName;
+        const parent = document.querySelector('.language');
+        parent.appendChild(list);
+    };
+
+    addLanguage("Python");
+    addLanguage("TypeScript");
+
+    ("OPTIMIZED way: ");
+    function addOptLanguage(textName){
+        const list = document.createElement('li');
+        // More Optimised way:
+        const addText = document.createTextNode(textName);
+        list.appendChild(addText);
+        document.querySelector('.language').appendChild(list);
+    }
+
+    addOptLanguage('Optimized CODE');
+    addOptLanguage('OPTIMIZED code');
+    
+    
+  </script>
+</html>
