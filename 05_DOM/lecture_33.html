@@ -1,22 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DOM | Chai aur Code</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM | Chai aur Code</title>
+  </head>
 
-<body style="background-color: #212121; color: white">
-  <div class="parent">
-    <div class="day">Monday</div>
-    <div class="day">Tuesday</div>
-    <div class="day">Wednesday</div>
-    <div class="day">Thursday</div>
-    <h1>Sunday</h1>
-  </div>
-</body>
-<script>
-    const doc = document.getElementsByClassName('parent')
-    doc.textContent = 'HTML'
-</script>
+  <body style="background-color: #212121; color: white">
+    <div class="parent">
+      <div class="day">Monday</div>
+      <div class="day">Tuesday</div>
+      <div class="day">Wednesday</div>
+      <div class="day">Thursday</div>
+      <h1>Friday</h1>
+    </div>
+  </body>
+  <script>
+    ("Children");
+    // const parent = document.querySelector(".parent");
+    // console.log(parent)
+    // console.log(parent.children[1].innerHTML)  // IMP : - HTML collection obtained
+    // console.log(parent.childNodes)   // Node collection
+
+    // const myChild = parent.children;
+    // for(i= 0; i<myChild.length; i++) {
+    //   console.log(myChild[i].innerHTML);
+    // }
+
+    ("Child Element");
+    // parent.children[2].style.color = "red"
+    // console.log(parent.firstElementChild)   // Target element
+    // console.log(parent.lastElementChild)
+    // console.log(parent.firstChild)
+    // console.log(parent.lastChild)   // obtains Content
+
+    ("Parent Element");
+    // const firstValue = document.querySelector(".day");
+    // console.log(firstValue); // As query selector is a expensive and heavy process (as it is traversing the whole tree object in DOM each time)
+    // console.log(firstValue.parentElement);
+    // console.log(firstValue.nextElementSibling);
+
+    ("Child Nodes");
+    // <!-- The code logs the number of child nodes in the parent element and explains that the count includes 
+    // ("Behind the Scene");
+    // console.log("NODES: ", parent.childNodes);  // 1. Node list value = 11, WHY? "In HTML, the \n (newline) character is considered a 'text' node."
+    //                                             // 2. the newline characters as text nodes, which are not rendered by the browser after the first occurrence.
+
+    (".................................   Creating and Editing a Element.");
+
+    const newElementDiv = document.createElement('div');
+    console.log(newElementDiv)
+    newElementDiv.className = "creation";
+    newElementDiv.id = Math.round((Math.random() * 10) + 1);      // Some FUN        
+     
+    ("Custom Attribute set:");
+    newElementDiv.setAttribute('title', 'code')     // This is preferred
+
+    // newElementDiv.style.color = 'orange' 
+    // newElementDiv.style.padding = '10px' 
+    newElementDiv.innerText = '1. Attachment on Web-Page. '  // This way overrides the value, 1st it select and brings the value and then override or change it.
+    
+    const addText = document.createTextNode("2. To display on Web-Page");  
+    newElementDiv.appendChild(addText)
+
+    ("To Attach/Display on Web-Page");      
+    // As the div we have created is in the memory, not in the Web-Page;
+    document.body.appendChild(newElementDiv)
+          
+  </script>
 </html>
