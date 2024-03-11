@@ -47,7 +47,7 @@
 // * Setting `className` overrides existing classes. To add multiple classes, separate them with spaces.
 // * Using `getAttribute` instead of `element.attribute` returns a string value and not an attribute object.
 
-0
+
 ("DOM Element Properties")
 
 // | Property       -     Description                                                                                   |
