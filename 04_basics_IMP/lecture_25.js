@@ -34,9 +34,9 @@ let result2 = addNum(10, 2);
 // Created once at the beginning of the script.
 
 // GEC contains:
-    // Execution phase Occurs:
+    // Execution phase :
         // 1. Memory Creation Phase
-        // 2. Execution Phase+
+        // 2. Execution Phase
 
 // "Initial values for variables are set to undefined by default, while functions are stored with their definitions (code)."
 
@@ -50,7 +50,7 @@ let result2 = addNum(10, 2);
 
 ("Execution Phase:")
 
-// A. Inside Global Execution Context:
+// A. In Global Execution Context:
 
 // val1 is assigned the value 10.
 // val2 is assigned the value 5.
