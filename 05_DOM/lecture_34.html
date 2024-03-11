@@ -20,13 +20,14 @@
   </body>
 
   <script>
-    // const parent = document.querySelector('.language');
     // const list = document.createElement('li');
+    // const parent = document.querySelector('.language');
+
+    // list.innerHTML = "Repeated";
     // parent.appendChild(list);
     // console.log(parent);
-    // list.innerHTML = "Repeated";
 
-    ("Basic: ");    // Problem: Optimisation Issue -- Each time the Whole tree is being traversed.
+    ("Basic:    innerHTML");    // Problem: Optimisation Issue -- In innerHTML, the whole tree is being traversed every time.
 
     // As we may have to add and create many tags so :
     function addLanguage(textName) {
@@ -39,10 +40,12 @@
     addLanguage("Python");
     addLanguage("TypeScript");
 
-    ("OPTIMIZED way: ");
+
+    ("OPTIMIZED way:    appendChild (create text node) ");      // Big PROJECTS (not small one)
+
     function addOptLanguage(textName){
         const list = document.createElement('li');
-        // More Optimised way:
+        //      More Optimised way:      Do not need to traverse the whole tree in DOM.
         const addText = document.createTextNode(textName);
         list.appendChild(addText);
         document.querySelector('.language').appendChild(list);
@@ -52,5 +55,28 @@
     addOptLanguage('OPTIMIZED code');
     
     
-  </script>
+    ("EDIT elements");      // As Element already exit, so taking reference is much easier in secondLang.
+    // Select
+    const secondLang = document.querySelector('li:nth-child(2)')       // Same as CSS
+    // console.log(secondLang)
+
+    // secondLang.innerHTML = "JAVA"   // -    Not a Optimized approach             // 1st method
+    
+    const newElement = document.createElement('li');
+    newElement.textContent = 'MoJo';
+    secondLang.replaceWith(newElement);                     // 2nd method
+
+    // Discussion topic : TextContent is worst than innerHTML
+
+    ("2. Example of EDIT")
+    const oldScript = document.querySelector('li')
+    // console.log(oldScript);
+    oldScript.outerHTML = '<li>TypeScript</li>';               // 3rd method
+
+
+    ("REMOVE element")
+    const lastLang = document.querySelector("li:last-child");
+    lastLang.remove();
+    
+  </script>                    
 </html>
