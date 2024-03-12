@@ -85,6 +85,7 @@ form.addEventListener('submit', (event)=>{
       guide = "Over Weight";
     }
 
+    // results.append(bmi , guide);
     results.innerHTML = `<span>${bmi}</span> <p>${guide}</p>`;
   };
 });
