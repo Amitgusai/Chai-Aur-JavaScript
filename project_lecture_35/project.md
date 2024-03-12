@@ -91,6 +91,20 @@ form.addEventListener('submit', (event)=>{
 });
 ```
 
+# Project 3
+
+```javascript
+const clock = document.getElementById('clock');
+
+// A method in javascript which runs in every moment/second and can be controlled by developer
+Syntax:
+// setInterval(function(){}, 1000)
+
+setInterval(function(){
+  const date = new Date();
+  clock.innerHTML = date.toLocaleTimeString();
+}, 1000)
+```
 
 
 
