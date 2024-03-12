@@ -13,6 +13,7 @@ const body = document.querySelector('body');
 
 // Here, we take an Event and store it in a function.
 
+// Using forEach as buttons is in form NodeList
 buttons.forEach(function(button){
   console.log(button);
   // Adding Event Listener
