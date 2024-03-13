@@ -107,8 +107,122 @@ setInterval(function(){
 ```
 
 
+# Project 4
 
+```javascript
+let randomNum = Math.round((Math.random() * 100) + 1);
 
+// Click Event will take place in id = 'subt'D
+const submit = document.querySelector('#subt');
+const userInput = document.querySelector('#guessField');
+
+const previousGuess = document.querySelector('.guesses');
+const remainingGuess = document.querySelector('.lastResult');
+const range = document.querySelector('.lowOrHi');
+const result = document.querySelector('.resultParas');
+
+const p = document.createElement('p');
+
+let previGuess = [];
+let numGuess = 11;
+
+// One variable is always there like playGame which allow us to play game. 
+let playGame = true;
+
+if(playGame){
+
+  submit.addEventListener('click', function(event){
+    event.preventDefault();
+    const guess = parseInt(userInput.value);
+    validateGuess(guess);
+  });
+}
+
+// Would mostly used in BackEnd Varification 
+function validateGuess(guess){
+  // Validates whether the value is a number and in range 1-100.
+  if (isNaN(guess)) {
+    alert('Please enter a valid number');
+  }
+  else if (guess < 1){
+    alert('Please enter a valid number more than 0');
+  }
+  else if (guess > 100){
+    alert('Please enter a valid number less than 101');
+  }
+  else {
+    previGuess.push(guess);
+    // Remaining guess = 0, End of Game 
+    if (numGuess == 2) {
+      displayGuess(guess)
+      displayMessage(`GameOver random number was ${randomNum}`)
+      endGame();
+    } 
+    else {
+      displayGuess(guess); // To display the array
+      checkGuess(guess);
+    }
+  }
+}
+
+function checkGuess(guess){
+  // Checks the guess is lower or higher than random Number and equal to random number.
+  if (guess === randomNum) {
+    displayMessage('You guessed it right');
+    displayGuess(guess);
+    endGame()
+  }
+  else if (guess > randomNum) {
+    displayMessage(`Your guess is higher than random number`);
+  }
+  else {
+    displayMessage(`Your guess is lower than random number`);
+  }
+}
+
+function displayGuess(guess){
+  // Values ko clean and Array ko and remaining guess ko Update.
+  userInput.value = ''    // Updating the userInput 
+  previousGuess.innerHTML += `${guess}, `;        // Interesting way to successive adding in DOM
+  numGuess = numGuess - 1;
+  remainingGuess.innerHTML = `${numGuess - 1}`;
+}
+
+function displayMessage(message){
+  // All DOM manipulation here.
+  range.innerHTML = `<h2>${message}</h2>`;
+}
+
+function endGame(){
+  userInput.value = '';   // Value Clean
+  userInput.setAttribute('disabled', '')        // Disabled additional value inserting
+  p.setAttribute('class', 'button');           // Creating button class
+  p.innerHTML = '<h2 id = "newGame">Start new Game</h2>';
+  // console.log(p)
+  result.appendChild(p);
+  playGame = false;                            // Most IMPORTANT
+  newGame();
+};
+
+function newGame(){
+
+  const newButton = document.querySelector('#newGame');
+  
+  newButton.addEventListener('click', function(event){
+    // Resetting variables
+    randomNum = Math.round((Math.random() * 100) + 1);
+    previGuess = []
+    numGuess = 11
+    previousGuess.innerHTML = '';
+    remainingGuess.innerHTML = `${11 - numGuess}`
+    userInput.removeAttribute('disabled');        // Removing Attributes
+    result.removeChild(p)
+
+    playGame = true;
+  })
+
+};
+```
 
 
 
