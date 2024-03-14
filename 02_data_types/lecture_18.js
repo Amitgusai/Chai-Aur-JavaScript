@@ -6,11 +6,13 @@ const login = {
   course_instructor: "Hitesh Choudhary",
 };
 
-console.log(login.username);
+// console.log(login.username);
 // De_Structure:
-const { course_instructor: Instructor } = login;
+const { username : name, password: num, course_instructor: instructor  } = login;
 // Same variable as keys in object
-console.log(Instructor);
+console.log(name);
+console.log(num);
+console.log(instructor);
 
 // Concept used in React as: De-Structuring in React
 // const navbar = ({company}) => {
@@ -55,54 +57,3 @@ console.log(Instructor);
 //       "Fiat"
 //   ]
 // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-const ob = {
-  name: "amit",
-  age: 34,
-  mentor: "hitesh",
-  guru: "love babbar"
-}
-
-let {name: am, age, mentor, teacher} = ob;
-console.log(am)

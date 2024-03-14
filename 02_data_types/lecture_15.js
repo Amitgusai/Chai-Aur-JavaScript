@@ -24,7 +24,7 @@ console.log(typeof all_new);
 // NON-primitive are all Objects
 
 const another_array = [1, 2, 3, [4, 5, 6], 7, 8, 9, [1, 2, [4, 5, 7]]];
-const real_array = another_array.flat(1);
+const real_array = another_array.flat(1);   // Infinity
 console.log(real_array);
 
 ("Specially used in Data/Web Sraping");

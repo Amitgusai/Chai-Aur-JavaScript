@@ -22,7 +22,7 @@ const user = {
 
 function object(obj1){
     // We have to check type_safety that the value we used in function actually available
-    // Professionals: Choose TypeScript to check type_safety is easy in that.
+    // Professionals: Choose TypeScript to check type_safety which is easy in that.
     // In JavaScript: Possible check of type_safety but Lengthy code using if_else or other.
     console.log(`Username is ${obj1.username} and his/her age is ${obj1.age}`)
 };

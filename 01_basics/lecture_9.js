@@ -30,9 +30,9 @@ console.log(typeof big);
 
 // Array, Object, Functions
 
-const array = ["amit", "rahul", "anjali"];
+const arr = ["amit", "rahul", "anjali"];
 
-let object = {
+let obj = {
   // all inside the curly braces is Object
   // key:value pair
 

@@ -55,7 +55,7 @@ const array_object = [
   },
 ];
 
-console.log(array_object[1]);
+console.log(array_object[0].name);
 
 ("........................................       IMPORTANT - Object to Array    ....................................");
 
