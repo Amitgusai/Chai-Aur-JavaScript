@@ -51,8 +51,17 @@ function addOne(num) {
 
 console.log(addTwo(5));
 // Also known as Expressions:
+
 const addTwo = function (num) {
   return num + 2;
 };
 
+// var is function-scoped.
+// let and const are block-scoped, meaning they only exist within the block they are declared in. 
+
 // Output: Cannot access 'addTwo' before initialization (Error found);
+
+("Interview Question:");
+// Does hoisting happen in let and const? 
+// Ans: It's not that hoisting doesn't happen with let and const, 
+//      but rather that the variables are not initialized during hoisting, leading to different behavior compared to var.
