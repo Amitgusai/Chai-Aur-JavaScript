@@ -50,7 +50,7 @@ const arrow_func = () => {
 
 arrow_func();
 
-(".....................................................................................Interview Question: What is the difference between Arrow function and Regular Function ?");
+("..............................................        Interview Question: What is the difference between Arrow function and Regular Function ?");
 
 // 1. Arrow function can use Implicit return while Regular function can't and only use Explicit return;
 // 2. The difference in 'this' in both functions lies in how 'this' is bound in them:
