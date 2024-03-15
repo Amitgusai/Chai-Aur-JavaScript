@@ -27,18 +27,19 @@
 })('hitesh');
 // See '()' as a function call 
 
-("InterView Question: ");
-// 1. What is IIEF?
-// Must mention the Global namaspace Pollution as well;
+(".........................................................         InterView Question: ");
 
-// 2. Write down a named IIEF. 
+// 1. What is IIFE?
+// Must mention the Global namespace Pollution as well;
+
+// 2. Write down a named IIFE. 
 // Similar as Regular function declaration;
 
 // 3. Write two IIEF simultaneously?
 // Error may occured in using explicit (;).
 
-// 4. Write down a unnamed IIEF.
+// 4. Write down a unnamed IIFE.
 // Similar as Arrow Function;
 
-// 5. How to pass parameter in IIEF function?
+// 5. How to pass parameter in IIFE function?
 // This is or treat '()' as regular function call and pass arguments through it.
