@@ -82,8 +82,7 @@ let result2 = addNum(10, 2);
 * Each function call creates a separate FEC, ensuring proper scoping and isolation of function behavior.
 * The `this` keyword within a function context typically refers to the object that invoked the function. However, this can be changed using methods like `call()`, `apply()`, or `bind()`.
 
-
-# Call Stack Internal Working
+# CALL STACK 
 
 The call stack is a data structure that operates on the Last-In, First-Out (LIFO) principle. This means that the most recently added item is the first to be removed. In the context of JavaScript, the call stack is used to manage function execution.
 
