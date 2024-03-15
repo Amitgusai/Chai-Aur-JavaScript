@@ -54,26 +54,29 @@ arrow_func();
 
 // 1. Arrow function can use Implicit return while Regular function can't and only use Explicit return;
 
-// 2. The difference in 'this' in both functions lies in how 'this' is bound in them:
+// 2. The difference in 'this' in both functions lies in how 'this' is bound to them:
 
     // In Regular function: 
-                            // a. this is bound to the object, the method is called on "(method is a function associated with an Object)";
-                            // b. if it is a standalone function, 'this' is Global object(in non-Strict mode(browser)) and 'this' is undefined(in Strict mode(node Terminal));
-    // In Arrow Function:
-                            // a. they do not have their own 'this'. Instead, they inherit 'this' from the parent scope at time of function declaration known as "lexical Scoping";
-                            // b. 'this' is not bound to the object or is lexically bound, it's set to the nearest 'this' value (parent scope) in non-arrow function, or the global object if there's no 'this' value property in parent scope.
+                            // a. In a Method: 'this' is bound to the object, the method is called upon "(method is a function associated with an Object)";
+                            // b. StandAlone: 'this' refers to the global object (in a browser, it's the window object; in Node.js, it's the global object).
+                            // c. this refers to the global object in non-strict mode, and is undefined in strict mode.
 
-// Example: 
-            this.name = "amit";
+    // In Arrow Function:  
+                            // a. Arrow functions do not have their own 'this' keyword. Instead, they inherit 'this' from the parent scope at the time of function declaration, a concept known as "lexical scoping".
+                            // b. 'this' inside the arrow function does not refer to object
+                            // c. Instead, it refers to the global context or global scope, where name is not defined.
 
-            let object = {
-                name: 'John',
-    // Arrow function
-                sayHello: () => {
-                return 'Hello, ' + this.name;
-    }
-};
-            console.log(object.sayHello()); // Outputs: Hello, amit
+    // Example: 
+                this.name = "amit";
+
+                let object = {
+                    name: 'John',
+        // Arrow function
+                    sayHello: () => {
+                    return 'Hello, ' + this.name;
+        }
+    };
+                console.log(object.sayHello()); // Outputs: Hello, amit
             
 
 // Arrow Function Syntax: 
