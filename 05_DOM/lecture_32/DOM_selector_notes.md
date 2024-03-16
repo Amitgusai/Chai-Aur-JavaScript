@@ -97,17 +97,18 @@ title.style.padding = '15px';
 
 ## Nodelist
 
-* const multi = document.querySelectorAll('li'): Selects all <li> elements as a nodelist.
+* const multi = document.querySelectorAll('li')
+* Selects all <li> elements as a nodelist.
 
 #### Differences from Arrays:
-* multi.style.color = 'green': Cannot set properties directly on a nodelist.
-* SAME in HTML collection : Cannot set properties directly on a nodelist.
 
+* multi.style.color = 'green': Cannot set properties directly on a nodelist.
 * multi[0].style.color = 'green': Can set properties on individual elements by accessing their index.
 
 ## HTML Collection
 
 * Similar to nodelists but created using `document.getElementsByTagName()` or by class(if same class's value is assigned).
+* Cannot set properties directly on a HTML collection.
 * Also not pure arrays.
 
 ## Array VS Nodelist/HTML Collection
