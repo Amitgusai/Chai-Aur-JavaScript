@@ -1,4 +1,4 @@
-("................................................          DOM selectors and HTML collection           ............................................");
+# DOM selectors and HTML collection
 
 ("Behind the Scenes:")
 
