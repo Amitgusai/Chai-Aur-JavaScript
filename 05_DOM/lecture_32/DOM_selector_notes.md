@@ -122,7 +122,7 @@ title.style.padding = '15px';
 * Arrays can be accessed using myArray[0], while nodelists and HTML collections can be accessed using multi[0].
 
 #### Looping: 
-* Arrays can be looped over using forEach(), forin(), etc., while nodelists and HTML collections can only be looped over using forEach().
+* Arrays can be looped over using forEach(), forin(), etc., while nodelists and HTML collections can only be looped over using forEach() and for() loop respectively.
 
 #### Array Methods: 
 * Arrays have a variety of built-in methods, such as map() and filter(), while nodelists and HTML collections only have a few of these methods (e.g., forEach()).
