@@ -11,16 +11,18 @@
 
 ### 1. Getting Elements by Class
 
-* `document.getElementsByClassName('classname')`: Returns a collection of elements with the specified class
+* `document.getElementsByClassName('classname')`
+* Returns a collection of elements with the specified class
 
 ### 2. Accessing Class Attributes:
 
-* `element.className`: Gets the class attribute value of an element.
-* `element.getAttribute('class')`: Same as `element.className`.
+* `element.className` : Gets the class attribute value of an element.
+* `element.getAttribute('class')` : Same as `element.className`.
 
 ### 3. Setting Class Attributes:"
 
-* `element.setAttribute('class', 'new-classname')`: Adds or replaces the class attribute with the specified value.
+* `element.setAttribute('class', 'new-classname')`
+*  Adds or replaces the class attribute with the specified value.
 
 ### 4. Manipulating Styles Using Class Attributes:"
 
