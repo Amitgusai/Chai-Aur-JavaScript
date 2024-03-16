@@ -93,7 +93,6 @@ const arr1 = ["amit", 5, "rahul", "anjali", "TATA", 1, "govind"];
 
 // In other words, the for...in loop is used for objects, and the for...of loop is used for iterable objects like Arrays, Strings, Maps, NodeLists, and more.
 
-
 for (const key in arr1) {
     console.log(arr1[key]);
 };
@@ -126,7 +125,7 @@ console.log("\n");
 
 ("2. ");
 // Arrow Function:
-arr2.forEach(item => {
+arr2.forEach((item) => {
     console.log(item);
 });
 console.log("\n");

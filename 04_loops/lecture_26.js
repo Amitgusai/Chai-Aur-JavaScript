@@ -57,8 +57,8 @@ if (balance > 500) {
 // Real Life Example:
 ("....................................          Logical Operators: ");
 
-// && (AND): Both conditions must be true for the code within if to execute (userLoggedIn && debitCard example).
-// || (OR): At least one condition must be true for the code within if to execute (loggedInFromGoogle || loggedInFromEmail example).
+// && (AND): Both conditions must be true for the code within to execute (userLoggedIn && debitCard example).
+// || (OR): At least one condition must be true for the code within to execute (loggedInFromGoogle || loggedInFromEmail example).
 
 const userLoggedIn = true;
 const debitCard = true;
@@ -100,7 +100,6 @@ switch (month) {
     break;
   default:
     console.log("This is Default");
-    break;
 }
 // break is important as if not then it will execute the whole code after that even if condition is already satisfied;
 // Exception - default
@@ -150,12 +149,12 @@ if (Object.keys(emptyObj).length === 0) {
 // false == "" : true;
 // 0 == ""     : true;
 
-(".........................................       Nullish Coalescing Operator (??) - Projects ");
+
+(".........................................       Nullish Coalescing Operator (??) - Projects       ...........................................");
 
 ("FallBack");
-// This '??' operator is used to check the value of the left-hand operand. 
+// This '??' operator is used to check the value of the left-hand operand and return it. 
 // If it is null or undefined, it will return the value of the right-hand operand (Default). 
-// If the left-hand operand is any other value (including 0, false, or an empty string), it will return the left-hand operand.
 
 let val1;
 // val1 = 5 ?? 10;
@@ -170,8 +169,7 @@ console.log(val1);
 console.log(val2);
 console.log(val3);
 
-
-("................................................................           Practical Example (DATABASE):         ...............................................");
+("..........................................           Practical Example (DATABASE):          ");
 
 
 // When calling a database, you might not get a response immediately, and the response might be null or undefined. 
@@ -198,6 +196,7 @@ console.log(val3);
 // Therefore, userEmail will be "no-email@example.com".
 
 // If the user had provided an email, getUserEmail("someUserId") would not be null or undefined, and the nullish coalescing operator would return the user's email instead of the default email.
+
 
 
 ("...........................................           Terniary Operator: '?' ");

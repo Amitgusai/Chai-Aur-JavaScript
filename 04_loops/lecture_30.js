@@ -22,7 +22,7 @@ const num3 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 const values1 = num3.filter( (num) => (num > 4));
 // CallBack Function (given condition )
-// Implicit return is used as '{}' requires explicit return statment as it means a scope is opened.
+// Implicit return is used as '{}' requires explicit 'return' statment as it means a scope is opened.
 console.log(values1);
 
 
