@@ -31,7 +31,7 @@
     // const parent = document.querySelector(".parent");
     // console.log(parent)
     // console.log(parent.children[1].innerHTML)  // IMP : - HTML collection obtained
-    // console.log(parent.childNodes)   // Node collection
+    // console.log(parent.childNodes)   // Node collection obtained
 
     // const myChild = parent.children;
     // for(i= 0; i<myChild.length; i++) {
@@ -60,7 +60,7 @@
     (".................................   Creating and Editing a Element.");
 
     const newElementDiv = document.createElement('div');
-    console.log(newElementDiv)
+    console.log(newElementDiv);
     newElementDiv.className = "creation";
     newElementDiv.id = Math.round((Math.random() * 10) + 1);      // Some FUN        
      
@@ -77,6 +77,12 @@
     ("To Attach/Display on Web-Page");      
     // As the div we have created is in the memory, not in the Web-Page;
     document.body.appendChild(newElementDiv)
+
+    ("Important: To Select element with Multiple classes: ");
+    // const p = document.querySelector('.uppercase.font-semibold.text-2xl');
+    ('or');
+    // You can select only any 1 class:
+    // const p = document.querySelector('.uppercase');
           
   </script>
 
