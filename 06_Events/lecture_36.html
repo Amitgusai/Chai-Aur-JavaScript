@@ -21,6 +21,10 @@
    </div>
 </body>
 <script>
+    // JavaScript is sequential Language 
+
+    // In JavaScript, all the Events runs sequentially (some Exception exist);
+
     document.getElementById('river').onclick = function(){
         alert('Not a Best Approach to use Events: It gives less feature than using addEventListener');
     };
@@ -29,7 +33,12 @@
         alert('Best Approach to use Events (currently)');
     });
 
-    
+    document.getElementById('photoshop').addEventListener('click', function(e){
+        // More you learn about this event object 'e', more profound you will become
+        console.log(e);
+    });
+
+
 
     
 </script>
