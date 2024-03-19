@@ -60,13 +60,15 @@
                     
     ("...............       Event Bubbling: DEFAULT     ");  
 
-    // document.getElementById('images').addEventListener('click', function() {
-    //     console.log("Clicked on ul");
-    // }, false);
+    document.getElementById('images').addEventListener('click', function() {
+        console.log("Clicked on ul");
+    }, false);
 
-    // document.getElementById('japan').addEventListener('click', function() {
-    //     console.log('Japan is beautiful');
-    // }, false);
+    document.getElementById('japan').addEventListener('click', function(e) {
+        console.log('Japan is beautiful');
+        // e.stopPropagation(); 
+        // Prevent the default or usage of the case 
+    }, false);
 
     ("...............       Event Capturing: ");
 
@@ -78,7 +80,7 @@
         console.log('Japan is beautiful');
     }, true);
 
-    
+
     
 
 
