@@ -13,6 +13,7 @@
         <ul id="images">
             <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
             <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="japan2" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
             <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
             <li><img width="200px" id="owl" onclick="alert('Worst Approach to use Events')" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li>
             <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
@@ -42,7 +43,7 @@
 
     (".................        What to Study        ............");
     
-    // 1. type, timestamp, defaultPrevented
+    // 1. type, timestamp, preventDefault
     // 2. target, toElement, srcElement, currentTarget
     // 3. Position related : clientX, clientY, screenX, screenY
     // 4. altkey, ctrlkey, shiftkey, keyCode(research on this)
@@ -54,41 +55,61 @@
 
     ("........................       Event Propogation       ......................");
 
+    // Event propagation is the process by which an event (like a click on a button) triggers one or more event listeners on the element that triggered the event and its ancestors 
+
     // Two context of Event Propogation : 
                                             // Event BUBBLING : Inner to Outer layer
                                             // Event CAPTURING : Outer to Inner layer
                     
     ("...............       Event Bubbling: DEFAULT     ");  
 
-    document.getElementById('images').addEventListener('click', function() {
-        console.log("Clicked on ul");
-    }, false);
+    // document.getElementById('images').addEventListener('click', function() {
+    //     console.log("Clicked on ul");
+    // }, false);
 
-    document.getElementById('japan').addEventListener('click', function(e) {
-        console.log('Japan is beautiful');
-        // e.stopPropagation(); 
-        // Prevent the default or usage of the case 
-    }, false);
+    // document.getElementById('japan').addEventListener('click', function(e) {
+    //     console.log('Japan is beautiful');
+    //     // e.stopPropagation(); 
+    //     // 	Stops event bubbling
+    // }, false);
 
     ("...............       Event Capturing: ");
 
-    document.getElementById('images').addEventListener('click', function() {
-        console.log("Clicked on ul");
-    }, true);
+    // document.getElementById('images').addEventListener('click', function() {
+    //     console.log("Clicked on ul");
+    // }, true);
 
-    document.getElementById('japan').addEventListener('click', function() {
-        console.log('Japan is beautiful');
-    }, true);
+    // document.getElementById('japan').addEventListener('click', function() {
+    //     console.log('Japan is beautiful');
+    // }, true);
 
 
+    document.querySelector('#google').addEventListener('click', function(e){
+        console.log("Google clicked");
+        
+        e.stopPropagation();
+        // Used to stop unwanted event bubbling, such as when an event is triggered on an inner element and you don't want it to trigger the same event on the parent element
+
+        e.preventDefault();
+        //	To prevent default behavior and perform custom actions
+    });
+
+    document.getElementById('images').addEventListener('click', function(e){
+        console.log(e.target.parentNode);
+        if (e.target.tagName === 'IMG') {
+            console.log(e.target.id);
+            let removeElement = e.target.parentNode;
+            removeElement.remove();
+        }
+        
+        // removeElement.parentNode.removeChild(removeElement);
+        // Same
     
-
-
-
+    },false);
 
 </script>
 </html>
-
+ 
 
 
 
