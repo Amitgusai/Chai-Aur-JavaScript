@@ -52,7 +52,38 @@
     // 1. Make an Application where the user clicks on something and gets its time
     // 2. Make an Application where we click on the div and create a circle
 
+    ("........................       Event Propogation       ......................");
+
+    // Two context of Event Propogation : 
+                                            // Event BUBBLING : Inner to Outer layer
+                                            // Event CAPTURING : Outer to Inner layer
+                    
+    ("...............       Event Bubbling: DEFAULT     ");  
+
+    // document.getElementById('images').addEventListener('click', function() {
+    //     console.log("Clicked on ul");
+    // }, false);
+
+    // document.getElementById('japan').addEventListener('click', function() {
+    //     console.log('Japan is beautiful');
+    // }, false);
+
+    ("...............       Event Capturing: ");
+
+    document.getElementById('images').addEventListener('click', function() {
+        console.log("Clicked on ul");
+    }, true);
+
+    document.getElementById('japan').addEventListener('click', function() {
+        console.log('Japan is beautiful');
+    }, true);
+
     
+    
+
+
+
+
 </script>
 </html>
 
