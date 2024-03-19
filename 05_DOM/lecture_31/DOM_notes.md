@@ -11,6 +11,8 @@
 * For example, the 'body' tag in an HTML document would be considered an object in the DOM, and it would be a node in the tree of objects. 
 * The 'p' tags within the 'body' tag would be considered child nodes of the <body> node.
 
+![](Document_Object_Model.png)
+
 
 ## Accessing DOM Objects
 ### To access DOM objects in JavaScript, you can use the following methods:
