@@ -88,19 +88,20 @@
         console.log("Google clicked");
         
         e.stopPropagation();
-        // Used to stop unwanted event bubbling, such as when an event is triggered on an inner element and you don't want it to trigger the same event on the parent element
+        // Used to stop unwanted event bubbling or capturing, such as when an event is triggered on an inner element and you don't want it to trigger the same event on the parent element
 
         e.preventDefault();
         //	To prevent default behavior and perform custom actions
     });
 
     document.getElementById('images').addEventListener('click', function(e){
-        console.log(e.target.parentNode);
+        // console.log(e.target.parentNode);
         if (e.target.tagName === 'IMG') {
-            console.log(e.target.id);
+            // console.log(e.target.id);
+            // let removeElement = e.target;
             let removeElement = e.target.parentNode;
             removeElement.remove();
-        }
+        };
         
         // removeElement.parentNode.removeChild(removeElement);
         // Same
@@ -110,33 +111,3 @@
 </script>
 </html>
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
